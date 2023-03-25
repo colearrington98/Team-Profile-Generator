@@ -83,5 +83,7 @@ function appMenu() { // create the appMenu function to prompt the user for the t
 
     createManager(); // call the createManager function
 
+}
+
     appMenu(); // call the appMenu function
 
