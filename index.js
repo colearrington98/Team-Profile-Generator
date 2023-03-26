@@ -235,7 +235,7 @@ function appMenu () { // create the appMenu function
 
 }
 
-appMenu();
+appMenu(); // call the appMenu function
 
 
 

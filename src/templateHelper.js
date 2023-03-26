@@ -1,8 +1,8 @@
-const generateTeam = team => {
+const generateTeam = team => { // This function will generate the HTML for the team page based on the user's input from the command line prompts in the app.js file 
 
-const generateManager = manager => {
+const generateManager = manager => { // This function will generate the HTML for the manager card on the team page 
 
-return `
+return ` 
     <div class="card employee-card">
         <div class="card-header">
             <h2 class="card-title">${manager.getName()}</h2>
@@ -20,7 +20,7 @@ return `
 
 }
 
-const generateEngineer = engineer => {
+const generateEngineer = engineer => {  // This function will generate the HTML for the engineer card on the team page
 
 return `
     <div class="card employee-card">
@@ -41,7 +41,7 @@ return `
 
 }
 
-const generateIntern = intern => {
+const generateIntern = intern => { // This function will generate the HTML for the intern card on the team page
 
 return `
     <div class="card employee-card">
@@ -61,40 +61,40 @@ return `
 
 }
 
-const html = [];
+const html = []; // This array will hold the HTML for the team page
 
-html.push(team
+html.push(team // This will push the HTML for the manager card to the array
 
-.filter(employee => employee.getRole() === "Manager")
+.filter(employee => employee.getRole() === "Manager") // This will filter the team array to only include the manager
 
-.map(manager => generateManager(manager))
+.map(manager => generateManager(manager)) // This will map the manager card HTML to the array
 
+); // This will end the push to the array
+
+html.push(team // This will push the HTML for the engineer cards to the array
+
+.filter(employee => employee.getRole() === "Engineer") // This will filter the team array to only include the engineers
+
+.map(engineer => generateEngineer(engineer)) // This will map the engineer cards HTML to the array
+
+.join("") // This will join the HTML for the engineer cards into a single string
+
+); // This will end the push to the array
+
+html.push(team // This will push the HTML for the intern cards to the array
+
+.filter(employee => employee.getRole() === "Intern") // This will filter the team array to only include the interns
+
+.map(intern => generateIntern(intern)) // This will map the intern cards HTML to the array
+
+.join("") // This will join the HTML for the intern cards into a single string
 );
 
-html.push(team
-
-.filter(employee => employee.getRole() === "Engineer")
-
-.map(engineer => generateEngineer(engineer))
-
-.join("")
-
-);
-
-html.push(team
-
-.filter(employee => employee.getRole() === "Intern")
-
-.map(intern => generateIntern(intern))
-
-.join("")
-);
-
-return html.join("");
+return html.join(""); // This will join the HTML for the manager, engineer, and intern cards into a single string
 
 };
 
-module.exports = team => {
+module.exports = team => { // This will export the generateTeam function
 
     return `
     <!DOCTYPE html>
@@ -130,4 +130,4 @@ module.exports = team => {
         
     </html>
     `;
-}; 
+}; // This will end the export of the generateTeam function

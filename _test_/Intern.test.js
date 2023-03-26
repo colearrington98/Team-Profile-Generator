@@ -1,4 +1,4 @@
-const intern = require("../lib/Intern");
+const intern = require("../lib/Intern"); // import the intern class
 
 test("Can set school via constructor", () => { // test to see if the school can be set via the constructor argument
     const testValue = "UCLA"; // set the test value to "UCLA"
