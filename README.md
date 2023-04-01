@@ -39,6 +39,9 @@ To install necessary dependencies, run the following command:
 5. Repeat steps 3 and 4 until you've added all the team members you want.
 6. When you're finished adding team members, the application will generate an HTML file in the 'dist/' directory that displays the team roster.
 
+## Video Walkthrough
+https://drive.google.com/file/d/1vjlyfNOwLYKaI9hRteTcXU6xgm79iQdA/view
+
 ## Contributing
 Contributions to the Team Profile Generator are welcome! If you have suggestions for improvements or bug fixes, please submit a pull request or open an issue on GitHub.
 
