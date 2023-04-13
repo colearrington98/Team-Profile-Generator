@@ -1,6 +1,9 @@
 # Team Profile Generator
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) 
 
+![Screenshot 2023-04-13 160340](https://user-images.githubusercontent.com/119268105/231882708-647b6b3e-cd60-4875-bd48-84a69fafaf70.png)
+
+
 ## Description
 
 The Team Profile Generator is a command-line application that allows you to generate a webpage that displays your team's basic information, including their emails and GitHub profiles. You can add team members, including managers, engineers, and interns, and the application will generate a nicely formatted team roster based on user input. 
